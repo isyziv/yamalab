@@ -54,7 +54,7 @@ window.RESOURCE_KINDS = [
   ]},
 ];
 
-window.LOGO_SRC = '/logo-mark.svg';
+window.LOGO_SRC = null;
 
 // 預設版本清單，App.jsx 啟動時會動態覆寫此值
 window.K8S_VERSIONS = ['v1.30.0', 'v1.29.0', 'v1.28.0'];
