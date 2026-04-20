@@ -2,7 +2,7 @@ import React from 'react';
 
 function AppBar({ lang, onLang, mode, onMode, activeNav, onNav, platform, k8sVersion, onK8sVersionChange }) {
   const versions = window.K8S_VERSIONS || ['v1.28.0', 'v1.29.0', 'v1.30.0'];
-  const logoSrc = window.LOGO_SRC || '/logo-mark.svg';
+  const logoSrc = window.LOGO_SRC || `${import.meta.env.BASE_URL}logo-mark.svg`;
   const showVersionSelector = activeNav !== 'generator' || platform === 'k8s';
 
   const navItems = [
