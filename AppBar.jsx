@@ -45,16 +45,6 @@ function AppBar({ lang, onLang, mode, onMode, activeNav, onNav, platform, k8sVer
         </div>
       )}
 
-      <div className="ym-seg">
-        <button className={mode === 'beginner' ? 'on' : ''} onClick={() => onMode('beginner')}>
-          {lang === 'en' ? 'Beginner' : '初學者'}
-        </button>
-        <button className={mode === 'advanced' ? 'on' : ''} onClick={() => onMode('advanced')}>
-          {lang === 'en' ? 'Advanced' : '進階'}
-        </button>
-      </div>
-      
-      <div className="ym-avatar" title={lang === 'en' ? 'User' : '使用者'}>YZ</div>
     </header>
   );
 }
